@@ -29,7 +29,20 @@
   \end{parts}
 
   \begin{solution}
-    % Enter your solution here.
+    \begin{parts}
+      \part  (a) If an observer sees k "faulty" compasses in front of him, he knows he is not the one with a faulty compass because there are only k number of faulty compasses. Hence, he has a working compass.
+  
+     (b) If an observer sees (k-1) "faulty" compasses in front of him, he knows he has a faulty compass because there are only k amount of faulty compasses but he only sees (k-1) which confirms him having a faulty compass.
+  
+  
+  \part	When the guide announces at-least k faulty compasses, then sequentially the hikers will respond “can’t tell” if they see k or more hikers with faulty compasses in front of them until the guide reaches the ith person who sees (k-1) hikers with faulty compasses. Since that person knows people before them said “can’t tell” because they saw k or more faulty compasses in front of them and there are only k-1 faulty ones in front of him who haven’t responded, then he must be the one with a faulty compass. Then subsequently using the same logic people after him would be able to tell their status, as the person with a working compass would know the ith person said faulty since he could see k-1 faulty ones who hadn’t responded and this person can also see k-1 faulty compasses in front of him, then his’ must be working and the person with a faulty compass would know the previous person said faulty since he could see k-1 faulty ones who hadn’t responded and this person can see k-2 faulty compasses in front of him, then his’ must be faulty as well. This cycle would go on until the last person.
+  Therefore, as soon as a person announces faulty, the others can tell their status.
+  
+  “As soon as a hiker responds “Working”, no subsequent hiker will respond “Can’t tell”” 
+  \part	When the guide announces at-most k faulty compasses, then subsequently the hikers will respond “can’t tell” if they see k or less hikers with faulty compasses and n-k or more hikers with working compasses in front of them until the guide reaches the ith person who can see (n-k)-1 people with working compasses. Since that person knows people before him said “can’t tell” because they saw n-k or more working compasses and he can only see (n-k)-1 working, then he must be the one with a working compass. Afterwards, the next hiker will be able to tell the state of their compass since the one with the working compass would know the ith person saw (n-k)-1 working compasses who hadn’t responded and this person could see (n-k)-2 working compasses who hadn’t responded then his’s must be working and the person with a faulty compass would know the previous person said working since he could see (n-k)-1 people with working compasses and this person could also see (n-k)-1 people with working compasses so his’ must be faulty. This cycle would go on until the last person.
+  (alternate case)
+  If there would be just one faulty compass occurring before the ith person, then he would announce himself faulty since there would be no other faulty compasses and then the rest would be able to tell the condition of their compasses as working.
+  \end{parts}
   \end{solution}
 \end{questions}
 
